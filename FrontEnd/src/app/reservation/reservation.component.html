@@ -1,0 +1,41 @@
+<!-- réservation html-->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Formulaire compte admin</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<!--<link rel="stylesheet" type="text/css" href="stylepage.css">-->
+	<link rel="stylesheet" type="text/css" href="reservation.component.css">
+
+</head>
+<body>
+		<div class="container">
+
+    	<div class="right_Side">
+        <div class="about">
+			<div class="contact-box">
+				<div class="left"></div>
+				<div class="right">
+					<h2>Demande de location</h2>
+                    <form action="connexion.php" method="post">
+                        Date De Départ: <br/><br/>
+                       <input type="date" class="field"  name="CIN">
+                       Date D'Arrivée: <br/><br/>
+                       <input type="date" class="field"  name="CIN">
+                       
+                       Mode de paiement:<br/><br/>
+                        <select class="field" name="agent" >
+                            <option  value="Carte de crédit">Carte de crédit</option>
+                            <option value="Carte bancaire">Carte bancaire</option>
+                        </select>
+                        <a class="btn btn-primary px-3" href="/payement"> Confirmer</a>
+
+<br><br>
+
+
+
+
+
+

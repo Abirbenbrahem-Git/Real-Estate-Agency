@@ -1,0 +1,77 @@
+<!--gérer immo html-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Formulaire compte admin</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--<link rel="stylesheet" type="text/css" href="stylepage.css">-->
+    <link rel="stylesheet" type="text/css" href="creerimmo.component.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+
+</head>
+
+<div class="container">
+    <h1 class="text-center mt-5 ">Gérer immobiliére</h1>
+    <div class="row">
+        <div class="col-2">
+            <input [(ngModel)]="appartement.nom" type="text" class="form-control m-1" placeholder="Nom">
+        </div>
+        <div class="col-2">
+
+            <input [(ngModel)]="appartement.prix" type="text" class="form-control m-1" placeholder="Prix">
+        </div>
+        <div class="col-2">
+            <input [(ngModel)]="appartement.imageurl" type="text" class="form-control m-1" placeholder="Image url">
+        </div>
+        <div class="col-2">
+            <input [(ngModel)]="appartement.description" type="text" class="form-control m-1" placeholder="Description">
+        </div>
+        <div class="col-2">
+            <input [(ngModel)]="appartement.type" type="text" class="form-control m-1" placeholder="Type">
+        </div>
+        <div class="col-2">
+            <button (click)="ajout()" class="btn btn-primary form-control ">Créer</button>
+        </div>
+
+    </div>
+    <br>
+    <div class="class row">
+        <div class="class col-3" *ngFor="let item of appartements">
+            <div class="card ">
+                <div class="card-image">
+                    <img class="w-100" [src]="item.imageurl" alt="">
+                </div>
+                <div class="card-body">
+                    <h2>{{item.nom}}</h2>
+                    <p>{{item.prix}}</p>
+                    <p>{{item.description}}</p>
+                    <p>{{item.type}}</p>
+                </div>
+                <button class="btn btn-primary form-control ">Modifier</button>
+                <button class="btn  btn-primary form-control ">Supprimer</button>
+            </div>
+        </div>
+        <div class="class col-3">
+            <div class="card">
+                <div class="card-image">
+                    <img class="w-100"
+                        src="https://deagamdesign.com/wp-content/uploads/2019/10/80-Macam-Desain-Rumah-Minimalis-2-Lantai-Gaya-Korea-Terbaru-dan-Terbaik-768x576.jpg"
+                        alt="">
+                </div>
+                <div class="card-body">
+                    <h2>Immobilier2</h2>
+                    <p>900.000DT</p>
+                    <p>Maison entièrement climatisée, grande terrasse.</p>
+                    <p>maison</p>
+                </div>
+                <button class="btn  btn-primary form-control ">Modifier</button>
+                <button class="btn  btn-primary form-control ">Supprimer</button>
+            </div>
+        </div>
+    </div>
+</div>

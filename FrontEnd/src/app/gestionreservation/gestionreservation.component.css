@@ -1,0 +1,15 @@
+<!-- gérer res css-->
+
+.btn{
+    background-color: #33B1EC;
+}
+img{
+    height: 250px;
+    width: 250px;
+    border:3px;
+}
+body{
+   margin: 0;
+   background-color:#DCF4FF;
+
+}

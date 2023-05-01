@@ -1,0 +1,69 @@
+<!-- gérer res html-->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Formulaire compte admin</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<!--<link rel="stylesheet" type="text/css" href="stylepage.css">-->
+	<link rel="stylesheet" type="text/css" href="gestionreservation.component.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    
+</head>
+<body>
+		<div class="container">                 
+               <h1 class="text-center mt-5 ">Traiter les demandes de location</h1>
+               <div class="row">
+                 <div class="class row">
+                    <div class="col" *ngFor="let item of appartements1" >
+                        <div class="card ">
+                            <div class="card-image">
+                                <img  [src]="item.imageurl" alt="">
+                            </div>
+                            <div class="card-body">
+                                <h2>{{item.nom}}</h2>
+                                <p>{{item.nomclient}}</p>
+                                <p>{{item.prix}}</p>
+
+                            </div>
+                            <div class="col">
+                            <button class="btn btn-primary ">Accepter</button>  </div>
+                            <div class="col">
+                            <button class="btn  btn-primary ">Refuser</button>   </div>
+                        </div>
+                    </div>
+                    <div class="class ">
+                        <div class="card">
+                            <div class="card-image">
+                                <img  src="https://deagamdesign.com/wp-content/uploads/2019/10/80-Macam-Desain-Rumah-Minimalis-2-Lantai-Gaya-Korea-Terbaru-dan-Terbaik-768x576.jpg" alt="">
+                            </div>
+                            <div class="card-body">
+                                <h2>Immobilier2</h2>
+                                <p>900.000DT</p>
+                                <p>Maison entièrement climatisée, grande terrasse.</p>
+                                <p>Maison</p>
+                                <p>CINClient</p>
+                                <p>Date d'arrivée</p>
+                                <p>Date de départ</p>
+
+                            </div>
+                            <div class="col">
+                            <button class="btn  btn-primary ">Accepter</button>  </div>
+                            <div class="col">
+                            <button class="btn  btn-primary ">Refuser</button>   </div>
+                        </div>
+                    </div>
+                 </div>
+
+
+
+
+
+    
+
+
+					
+<br><br>
+
+
